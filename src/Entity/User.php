@@ -34,7 +34,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @UniqueEntity(fields={"firstName", "lastName"}, message="Un compte existe déjà avec ce nom et prénom.", repositoryMethod="findForUniqueness")
  * @ORM\HasLifecycleCallbacks()
  */
-class User implements UserInterface, EmailTwoFactorInterface
+class User implements UserInterface
 {
     const NUM_ITEMS = 20;
 
